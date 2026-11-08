@@ -1,0 +1,29 @@
+<!doctype html>
+<!--
+  Reel compositor. reel/engine.js builds the stage and the seek(t) API; edit.js is this project's edit.
+  tmp/meta.js is written by scripts/prep.sh (duration and frame count of source/edit.mp4).
+  Open directly in a browser to preview: click to play with audio/mix.wav, ?t=12.3 freezes a frame, ?captions=0 hides captions.
+-->
+<html>
+<head>
+<meta charset="utf-8" />
+<title>reel</title>
+<link rel="stylesheet" href="reel/engine.css" />
+<style>
+  @font-face { font-family: 'Silkscreen'; src: url(assets/fonts/silkscreen.woff2) format('woff2'); font-weight: 400; font-display: block; }
+  /* same visual system as the previous project: flat warm grey, white cards, mono uppercase captions on a dark box */
+  :root { --c-bg: #EEEDEA; --c-bg2: #EEEDEA; --c-grid: rgba(0,0,0,0); --c-muted: #6E6C67; }
+  #bg { background: #EEEDEA !important; }
+  /* the footage is kept 16:9 (1920x1080 frames), never cropped to 9:16 */
+  #faceImg { width: 1920px !important; height: 1080px !important; }
+  .cap { font-family: 'Geist Mono', monospace; font-weight: 500; font-size: 38px; line-height: 64px; letter-spacing: 4px; text-transform: uppercase; color: #fff; }
+  .cap span { background: #2B2A28; padding: 8px 18px 9px; border-radius: 7px; box-shadow: none; }
+  .cap i { font-style: normal; color: inherit !important; }
+</style>
+</head>
+<body>
+<script src="tmp/meta.js"></script>
+<script src="reel/engine.js"></script>
+<script src="edit.js"></script>
+</body>
+</html>

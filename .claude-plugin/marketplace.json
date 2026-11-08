@@ -1,0 +1,17 @@
+{
+  "name": "ai-editing-workshop",
+  "owner": { "name": "AI Editing Workshop" },
+  "metadata": {
+    "description": "AI Editing Workshop: edit talking-head videos into Reels / TikToks / Shorts with Claude Code in the workshop's house styles.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ai-video-editor",
+      "source": "./plugins/ai-video-editor",
+      "description": "workshop-reel-editor: 9:16 reels with motion graphics, split screens, pixel 2D characters, uncropped 16:9 footage, arena fights, Roman Urdu / Hinglish captions, sound effects and -14 LUFS mastering.",
+      "version": "1.0.0",
+      "keywords": ["video", "reels", "shorts", "tiktok", "motion-graphics", "captions", "hinglish"]
+    }
+  ]
+}

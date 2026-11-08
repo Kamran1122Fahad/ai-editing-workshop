@@ -1,0 +1,17 @@
+AI Editing Workshop - ai-video-editor
+Copyright 2026 AI Editing Workshop
+
+This product includes software from video-agent-skill by sunith vs
+(https://github.com/sunithvs/video-agent-skill), licensed under the Apache License, Version 2.0.
+The reel-editor skill (engine, scripts, references, examples artcraft and reel-with-claude) is used as the base of
+plugins/ai-video-editor/skills/workshop-reel-editor.
+
+Changes made to the original files:
+- reel/engine.js: added the seamShadow and capShow options to reel().
+- scripts/probe.sh: removed the stream_side_data entry (ffprobe 4.4 compatibility).
+- scripts/transcribe.py: pinned av>=14,<16 (PyAV 19 broke faster-whisper).
+- scripts/new_project.sh: added the --style option.
+- SKILL.md, references/engine-api.md: rewritten / extended for the workshop styles.
+Added: assets/presets/*, scripts assemble_wide.sh and cut_sprite.py, references styles.md, house-rules.md,
+horizontal-footage.md, pixel-kit.md, arena-fight.md, examples claude-jobs, chatgpt-business, content-career, and the
+fonts Silkscreen, Poppins and Jersey 10 (SIL Open Font License, licence texts next to the fonts).

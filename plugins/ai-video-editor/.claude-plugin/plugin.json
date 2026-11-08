@@ -1,0 +1,8 @@
+{
+  "name": "ai-video-editor",
+  "version": "1.0.0",
+  "description": "AI Editing Workshop video editor for Claude Code: talking-head videos into finished 9:16 Reels, TikToks and Shorts in the workshop house styles (cream karaoke split, clean straight split, pixel 2D around uncropped 16:9 footage, arena fights), rendered from HTML with Playwright + ffmpeg.",
+  "author": { "name": "AI Editing Workshop" },
+  "license": "Apache-2.0",
+  "keywords": ["video", "reels", "shorts", "tiktok", "motion-graphics", "captions", "ffmpeg", "playwright"]
+}
